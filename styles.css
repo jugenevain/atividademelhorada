@@ -1,0 +1,23 @@
+/* Definindo a fonte padrão Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f7f7;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* REQUISITO 2: INTERAÇÃO COM O MOUSE (Transição Suave) */
+/* Garante uma transição suave da cor de fundo */
+#textInput {
+    /* Transição de 0.4 segundos na propriedade 'background-color' para suavidade */
+    transition: background-color 0.4s ease-in-out, border-color 0.2s ease;
+    background-color: white; /* Fundo inicial branco (requisito ao sair) */
+}
+
+/* Classe a ser adicionada via JS para o efeito de "entrar" (fundo amarelo) */
+.highlight-mouse-enter {
+    background-color: #fff9c4 !important; /* Amarelo suave */
+}
